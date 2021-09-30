@@ -31,18 +31,18 @@ public class Window {
     public static final HashMap<String, Texture> TEXTURES = new HashMap<>();
     public static final Map<Character, String> PIECES_MAP = new HashMap<>();
     static {
-        PIECES_MAP.put('r', "r");
-        PIECES_MAP.put('n', "n");
-        PIECES_MAP.put('b', "b");
-        PIECES_MAP.put('q', "q");
-        PIECES_MAP.put('k', "k");
-        PIECES_MAP.put('R', "R_");
-        PIECES_MAP.put('N', "N_");
-        PIECES_MAP.put('B', "B_");
-        PIECES_MAP.put('Q', "Q_");
-        PIECES_MAP.put('K', "K_");
-        PIECES_MAP.put('p', "p");
-        PIECES_MAP.put('P', "P_");
+        PIECES_MAP.put('r', "br");
+        PIECES_MAP.put('n', "bn");
+        PIECES_MAP.put('b', "bb");
+        PIECES_MAP.put('q', "bq");
+        PIECES_MAP.put('k', "bk");
+        PIECES_MAP.put('R', "wr");
+        PIECES_MAP.put('N', "wn");
+        PIECES_MAP.put('B', "wb");
+        PIECES_MAP.put('Q', "wq");
+        PIECES_MAP.put('K', "wk");
+        PIECES_MAP.put('p', "bp");
+        PIECES_MAP.put('P', "wp");
         PIECES_MAP.put('d', "dot");
         PIECES_MAP.put('t', "target");
     }

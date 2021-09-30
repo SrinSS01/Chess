@@ -43,7 +43,6 @@ public class Box<T extends Button<T>> {
             button.click(x, y, action);
         }
     }
-
     public void hover(double xpos, double ypos) {
         for (T button : BUTTONS) {
             button.hover(xpos, ypos);

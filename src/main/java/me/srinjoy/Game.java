@@ -22,18 +22,18 @@ public class Game {
     char turn = 'w';
 
     public Game() throws IOException {
-        Window.loadTextures(1, "r", "download");
-        Window.loadTextures(2, "n");
-        Window.loadTextures(3, "b");
-        Window.loadTextures(4, "q");
-        Window.loadTextures(5, "k");
-        Window.loadTextures(6, "R_");
-        Window.loadTextures(7, "N_");
-        Window.loadTextures(8, "B_");
-        Window.loadTextures(9, "Q_");
-        Window.loadTextures(10, "K_");
-        Window.loadTextures(11, "p");
-        Window.loadTextures(12, "P_");
+        Window.loadTextures(1, "br", "download");
+        Window.loadTextures(2, "bn");
+        Window.loadTextures(3, "bb");
+        Window.loadTextures(4, "bq");
+        Window.loadTextures(5, "bk");
+        Window.loadTextures(6, "wr");
+        Window.loadTextures(7, "wn");
+        Window.loadTextures(8, "wb");
+        Window.loadTextures(9, "wq");
+        Window.loadTextures(10, "wk");
+        Window.loadTextures(11, "bp");
+        Window.loadTextures(12, "wp");
         Window.loadTextures(13, "dot");
         Window.loadTextures(14, "target");
         for (int i = 0; i < 64; i++) {
