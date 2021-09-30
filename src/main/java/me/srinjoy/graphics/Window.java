@@ -197,13 +197,13 @@ public class Window {
     public void render(IRenderCallback callback) {
         glClear(GL_COLOR_BUFFER_BIT);
         VAO.bind();
-        SHADER.active();
         SHADER.setUniform1iv("tex", TEX);
         var mvp = new Matrix4f().identity().ortho2D(0F, WIDTH * 1F, 0F, HEIGHT * 1F).get(new float[16]);
         SHADER.setUniformMat4("mvp", mvp);
         callback.invoke();
         if (!BOXES.isEmpty()) {
             for (var box: BOXES) {
+                SHADER.active();
                 box.render();
             }
         }

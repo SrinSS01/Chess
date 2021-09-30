@@ -70,7 +70,6 @@ public class Game {
                 }
             }, chess.get(i)));
         }
-        window.addBox(BOARD);
         var fontBufferIS = Main.class.getResourceAsStream("fonts/RobotoMono-Light.ttf");
 
         var download_button_box = new Box<ImageButton>(405 + 200 - 10 - 30, 10, true);
@@ -83,6 +82,7 @@ public class Game {
             reset_button_box.addButton(new TextButton(0, 0, 200 - 15 - 30, 30, NULL, button -> reset(), "reset", new Font(window.FONT_SHADER, fontBuffer)));
             window.addBox(reset_button_box);
         } else System.err.println("unable to find fonts/RobotoMono-Light.ttf");
+        window.addBox(BOARD);
     }
 
     private void unselect() {
